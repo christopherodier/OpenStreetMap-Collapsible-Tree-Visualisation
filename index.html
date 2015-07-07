@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+
+<!--Load CSS stylesheet-->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body onload="collapsibleTree()">
+
+      <div id="tree"></div>
+      <div id="header">
+          <h1>OpenStreetMap</h1>
+          <h3>A Collapsible Tree visualisation</h3>
+          <p>
+          - Click on the nodes to expand/collapse<br>
+          - Rollover the name to see a description<br>
+          - Click on the name to go to the corresponding Wiki page<br>
+          - You can zoom and pan the tree<br>
+          </p>
+        <p onclick="resetCollapsibleTree();"><b>Reset the tree</b></p>
+      </div>
+      <div id="overlay" onclick='overlay()'>
+             <div>
+                <p>Built with the <a href="http://d3js.org/" target="_blank">D3 javascript library</a></p>
+                <p>Data in JSON format. You can find file <a href="openstreetmap-stack.json" target="_blank">here</a></p>
+                <p>Licensed under the <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons Attribution-ShareAlike 2.0</a> license (CC-BY-SA).</p>
+                <p>© OpenStreetMap contributors</p>
+                <p>Thanks to <a href="https://twitter.com/mbostock" target="_blank">- Mike Bostock</a> for the <a href="http://bl.ocks.org/mbostock/4339083" target="_blank">D3 collapsible tree code</a> at <a href="http://bl.ocks.org/" target="_blank">bl.ocks.org</a> and the contributors on <a href="http://stackoverflow.com" target="_blank">Stack Overflow.</a></p>
+                <p>Please send me your feedback, comments, suggestions, critiques and if you want to contribute and collaborate, please let me know by <a href="mailto:chris@threefiftythree.com" target="_blank">email</a> or via twitter (<a href="https://twitter.com/leponot" target="_blank">@leponot</a>).</p>
+                
+
+                
+             </div>
+      </div>
+      <div id="infobox"></div>
+      <div id="infobutton" onclick='overlay()'>
+            <p>Three Fifty Three - 2015 - Credits</p>
+      </div>
+  
+<!--Load D3 library-->
+<!-- <script src="js/d3.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+
+<!--Load Javascript file-->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+

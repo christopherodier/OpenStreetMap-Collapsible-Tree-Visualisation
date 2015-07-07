@@ -1,0 +1,144 @@
+body {
+background-color: #E1EBF5;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #EFC94C;
+  stroke: #EFC94C;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 12px verdana;
+  fill: #FFF;
+}
+
+.node:hover text {
+  font: 12px verdana;
+  fill: #E27A3F;
+}
+.node:hover { 
+  fill: #E27A3F ;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+.name {
+  font: 14px verdana;
+  font-weight: bold;
+}
+
+.svg {
+  border: 1px solid black;
+  border-radius: 5px;
+  position:absolute;
+ }
+
+#header {
+  position:absolute;
+  background: #EFC94C;
+  top: 5px;
+  right: 10px;
+  height: 230px;
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: verdana;
+  padding: 5px;
+}
+
+ #tree {    
+  position:absolute;
+  background-color: #334D5C;
+  top: 5px;
+  left: 10px;
+  width: 75%;
+  height: 660px; 
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#infobox {    
+  position:absolute;
+  background: #E27A3F;
+  top: 245px;
+  right: 10px;
+  width: 280px;
+  height: 370px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: verdana;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Style for the fullscreen/hiding for #overlay*/
+#overlay { 
+  visibility: hidden;
+  position: absolute;
+  background: #000000;
+  opacity: 0.8;
+  top: 245px;
+  right: 10px;
+  width: 280px;
+  height: 370px;
+  z-index: 1000;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Style the inner <div>*/
+#overlay div {
+  position: absolute; 
+  margin-left: 5px; 
+  margin-right: 5px;
+  font: 13px verdana;
+  font-style: italic;
+  color: #E27A3F;
+}
+
+/* Style the links in inner <div>*/
+#overlay a {
+  font: 13px verdana;
+  font-style: italic;
+  color: #E27A3F; 
+}
+
+#infobutton {    
+  position: absolute; 
+  background: #334D5C;
+  top: 630px;
+  right: 10px;
+  width: 280px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font: 11px verdana;
+  font-style: italic;
+  color: white; 
+  text-align: center; 
+}
+
+#infobutton p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -9px;
+}
