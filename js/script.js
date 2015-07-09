@@ -5,21 +5,20 @@ var margin = {top: -40, right: 20, bottom: -40, left: 110},
 // Used for zooming
 var realWidth = window.innerWidth;
 var realHeight = window.innerHeight;
-
 var m = [40, 240, 40, 240],
     w = realWidth -m[0] -m[0],
     h = realHeight -m[0] -m[2];
-// End used for zooming
 
 var i = 0,
-    duration = 300, // Time for deployment of new child nodes
+    duration = 300, // Duration of deployment of new child nodes
     root;
 
-var tree = d3.layout.tree()
+var tree = d3.layout.tree() // Call on the d3 tree layout method
     .size([height, width]);
 
-var diagonal = d3.svg.diagonal()
-    .projection(function(d) { return [d.y, d.x]; }); 
+var diagonal = d3.svg.diagonal()                      // Diagonal path generator 
+    .projection(function(d) { return [d.y, d.x]; }); // d.x and d.y are switched so the path matches the nodes
+                                                    // makes the paths horizontal instead of vertical
 
 
 /*********************************
@@ -27,8 +26,8 @@ var diagonal = d3.svg.diagonal()
 *********************************/
 function collapsibleTree() { 
 
+          // For the reset the function. Removes the existing tree before re-generating a new one. 
           d3.selectAll(".collapsibletree").remove();
-
 
           var svg = d3.select("#tree").append("svg") // Append svg to tree div
               .attr("width", width + margin.right + margin.left)
@@ -77,8 +76,9 @@ function collapsibleTree() {
           function update(source) {
 
             // Compute the new tree layout.
-            var nodes = tree.nodes(root).reverse();
-            var  links = tree.links(nodes);
+            var nodes = tree.nodes(root).reverse(); // return an array of objects with parents and child for each
+            var  links = tree.links(nodes);  // return an array of objects. Each has source and target properties
+                                             // source and target are the nodes
 
             // Normalize for fixed-depth.
             nodes.forEach(function(d) { d.y = d.depth * 150;}); // Determine the horizontal spacing of the nodes
@@ -86,20 +86,24 @@ function collapsibleTree() {
 
             // Update the nodes…
             var node = svg.selectAll("g.node")
-                .data(nodes, function(d) { return d.id || (d.id = ++i); });
+                .data(nodes, function(d) { return d.id || (d.id = ++i); }); // binds to the nodes data array
 
             // Enter any new nodes at the parent's previous position.
-            var nodeEnter = node.enter().append("g")
+            var nodeEnter = node.enter()
+                .append("g") // append a g element to each object
                 .attr("class", "node")
-                .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+                .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; }) // place the nodes according to x and y properties
+                                                                                                              // x and y are switch so tree is horizontal not vertical
                 .on("click", click);    
 
+            // append circles to nodes
             nodeEnter.append("circle")
                 .attr("r", 10)
-                .style("fill", function(d) { return d._children ? "#EFC94C" : "#fff"; });
+                .style("fill", function(d) { return d._children ? "#EFC94C" : "#fff"; }); // If the nodes has children set to the color to #EFC94C otherwise set it to #fff
 
             nodeEnter.append("text")
-                .attr("x", function(d) { return d.children || d._children ? -10 : 10; }) //Distance (left/right) from node
+                .attr("x", function(d) { return d.children || d._children ? -10 : 10; }) //Distance of name in relation to node (left/right) 
+                                                                                        // If the nodes has children set to -10 otherwise set it to 10
                 .attr("dy", ".35em") //Distance (up/down) from node
                 .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
                 .text(function(d) { return d.name; })
@@ -121,7 +125,7 @@ function collapsibleTree() {
 
             nodeUpdate.select("circle")
                 .attr("r", 4.5)
-                .style("fill", function(d) { return d._children ? "#EFC94C" : "#fff"; });
+                .style("fill", function(d) { return d._children ? "#EFC94C" : "#fff"; }); // If the nodes has children set to the color to #EFC94C otherwise set it to #fff
 
             nodeUpdate.select("text")
                 .style("fill-opacity", 1);
