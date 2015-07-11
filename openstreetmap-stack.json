@@ -147,12 +147,17 @@
      "description": "It's one of several contact channels used by the OpenStreetMap community. Real-time chat can be a great way to ask a quick question about mapping or some more technical matter, or just to get to know some fellow OpenStreetMap enthusiasts.", "link": "http://wiki.openstreetmap.org/wiki/IRC"
     },
     {
-     "name": "Humanitarian Projects",
-     "description": "This is by no means an exhaustive list of all existing OSM projects but if you want to start mapping this can be a good starting point.",
-     "children": [
-      {"name": "Humanitarian OSM Team (HOT)", "description": "The Humanitarian OpenStreetMap Team (HOT) applies the principles of open source and open data sharing to humanitarian response and economic development.", "link": "http://wiki.openstreetmap.org/wiki/Humanitarian_OSM_Team"},
-      {"name": "Missing Maps", "description": "The Missing Maps Project is a humanitarian mapping project. A collaboration between HOT and various partner agencies.<br> Its aim is to map the most vulnerable places in the developing world, in order that international and local NGOs, and individuals can use the maps and data to better respond to crises affecting the areas.", "link": "http://wiki.openstreetmap.org/wiki/Missing_Maps_Project"}
-      ]
+      "name": "Projects",
+      "description": "This is by no means an exhaustive list of all existing OSM projects but if you want to start mapping this can be a good starting point.",
+    "children": [
+      {"name": "OpenSeaMap", "description": "The free nautical chart", "link": "http://openseamap.org"},
+      {"name": "Humanitarian", 
+        "children": [
+        {"name": "Humanitarian OSM Team (HOT)", "description": "The Humanitarian OpenStreetMap Team (HOT) applies the principles of open source and open data sharing to humanitarian response and economic development.", "link": "http://wiki.openstreetmap.org/wiki/Humanitarian_OSM_Team"},
+        {"name": "Missing Maps", "description": "The Missing Maps Project is a humanitarian mapping project. A collaboration between HOT and various partner agencies.<br> Its aim is to map the most vulnerable places in the developing world, in order that international and local NGOs, and individuals can use the maps and data to better respond to crises affecting the areas.", "link": "http://wiki.openstreetmap.org/wiki/Missing_Maps_Project"}
+        ]
+      }     
+    ]
     }
    ]
   },
