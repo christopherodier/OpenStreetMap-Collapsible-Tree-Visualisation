@@ -129,6 +129,7 @@
   },
   {
    "name": "The Community",
+   "description": "How to reach out and become part of the community that is at the heart of OSM (mailing lists, IRC channels, forums, projects)",
    "children": [
     {
      "name": "Mailing lists",
@@ -163,6 +164,7 @@
   },
   {
    "name": "The Data",
+    "description": "Data is one of the mail building block of OSM as all that constitute OSM is stored in a database.",
    "children": [
     {
      "name": "Formats",
@@ -235,6 +237,11 @@
      },
       {"name": "Handling bad imports ", "description": "What to do if you discovered a bad import.", "link": "http://wiki.openstreetmap.org/wiki/Handling_bad_imports"}
      ]
+    },
+    {
+     "name": "Servers",
+     "description":"All you ever wanted to know about the engine running OSM",
+     "link":"http://wiki.openstreetmap.org/wiki/Servers"
     }
    ]
   },
@@ -252,7 +259,8 @@
   },
   {
    "name": "Learning resources",
-   "children": [
+    "description": "If you want to learn how to contribute, you'll find guides, tutorials, webinars, videos here.",
+    "children": [
       {"name": "Beginners' guide", "description": "Will show you how to add data to OpenStreetMap", "link": "https://wiki.openstreetmap.org/wiki/Beginners%27_guide"},
       {"name": "Learn OSM", "description": "Online manual created by the Humanitarian OpenStreetMap Team. It was originally aimed at HOT's work in Indonesia. The content is being expanded to help provide information in for projects in other areas.", "link": "http://learnosm.org"},
       {"name": "Learning Guides", "description": "Guides in Google Docs format. Beginners/Intermediate/Advanced. Include a QGIS guide", "link": "https://github.com/hotosm/learnosm/wiki/English-Learning-Guides"},
@@ -262,6 +270,7 @@
     },
   {
    "name": "Software",
+    "description": "All aspects of using OSM with editing, rendering, monitoring, fixing and routing softwares",
    "children": [
     {
      "name": "Editors",
@@ -319,6 +328,7 @@
   },
   {
    "name": "OSM-based services",
+   "description": "A list of projects using especially data from OpenStreetMap.", "link":"https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services",
    "children": [
       {"name": "General", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#General"},
       {"name": "Art", "description": "Some artistic maps using OSM data", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Art"},
