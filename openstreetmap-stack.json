@@ -346,7 +346,10 @@
       {"name": "Live/real-time edits to OSM data", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Live.2Freal-time_edits_to_OSM_data"},
       {"name": "Quality Assurance - OSM Tool", "description": "List of web utilities to work with OSM on monitoring, debugging, etc. ", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Quality_Assurance_-_OSM_Tool"}
      ]
-    }
+    },
+    {
+   "name": "Glossary",
+   "description": "A list of technical and colloquial terms used in and around the OpenStreetMap project. Note: It's fairly arbitrary what has been included on this page. This list is certainly not complete. There are very many jargon words, and names of software in and around OpenStreetMap.", "link":"https://wiki.openstreetmap.org/wiki/Glossary"}
  ]
 }
 

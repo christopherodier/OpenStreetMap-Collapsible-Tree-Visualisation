@@ -1,4 +1,4 @@
-var margin = {top: -40, right: 20, bottom: -40, left: 110},
+var margin = {top: -20, right: 20, bottom: -40, left: 110},
     width = 960 - margin.right - margin.left, //960 is min to show all childs
     height = 650 - margin.top - margin.bottom;
 
@@ -14,7 +14,7 @@ var i = 0,
     root;
 
 var tree = d3.layout.tree() // Call on the d3 tree layout method
-    .size([height, width]);
+    .size([height - 30, width]);
 
 var diagonal = d3.svg.diagonal()                      // Diagonal path generator 
     .projection(function(d) { return [d.y, d.x]; }); // d.x and d.y are switched so the path matches the nodes
@@ -71,7 +71,7 @@ function collapsibleTree() {
             update(root);
           });
 
-          d3.select(self.frameElement).style("height", "800px");
+          d3.select(self.frameElement).style("height", "00px");
 
           function update(source) {
 
@@ -195,7 +195,7 @@ function collapsibleTree() {
 
       d3.select("svg")
               .call(d3.behavior.zoom()
-                    .scaleExtent([0.5, 5])
+                    .scaleExtent([0.5, 15])
                     .on("zoom", zoom));
 
       function zoom() {
