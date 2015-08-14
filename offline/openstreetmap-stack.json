@@ -1,0 +1,355 @@
+{
+ "name": "OpenStreetMap",
+ "description":"OpenStreetMap (OSM) is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices",
+ "link":"https://en.wikipedia.org/wiki/OpenStreetMap",
+ "children": [
+  {
+   "name": "The Map", 
+   "description": "The map itself", "link": "http://www.openstreetmap.org/",
+   "children": [
+    {
+     "name": "Topological Data Structure", "description": "OpenStreetMap uses a topological data structure, with four core elements (also known as data primitives)", "link":"https://en.wikipedia.org/wiki/OpenStreetMap#Data_format",
+     "children": [
+      {"name": "Data primitives (Elements)", "description": "Elements (also data primitives) are the basic components of OpenStreetMap's conceptual data model of the physical world", "link": "http://wiki.openstreetmap.org/wiki/Elements",
+          "children": [
+      {"name": "Nodes", "description": "Nodes are points with a geographic position, stored as coordinates (pairs of a latitude and a longitude) according to WGS 84.[66] Outside of their usage in ways, they are used to represent map features without a size, such as points of interest or mountain peaks.", "link": "http://wiki.openstreetmap.org/wiki/Node"},
+      {"name": "Ways", "description": "Ways are ordered lists of nodes, representing a polyline, or possibly a polygon if they form a closed loop. They are used both for representing linear features such as streets and rivers, and areas, like forests, parks, parking areas and lakes.", "link": "http://wiki.openstreetmap.org/wiki/Way"},
+      {"name": "Relations", "description": "Relations are ordered lists of nodes, ways and relations (together called 'members'), where each member can optionally have a 'role' (a string). Relations are used for representing the relationship of existing nodes and ways. Examples include turn restrictions on roads, routes that span several existing ways (for instance, a long-distance motorway), and areas with holes.", "link": "http://wiki.openstreetmap.org/wiki/Relation"}
+     ]
+      },
+      {"name": "Non data primitives", "description": "N/A", "link": "",
+          "children": [
+      {"name": "Area", "description": "An area (or filled polygon) can be defined as an enclosed filled area defined as a closed way with appropriate associated tags or using a multipolygon relation creating an area from one of more ways.", "link": "http://wiki.openstreetmap.org/wiki/Area"},
+      {"name": "tag", "description": "Tags are key-value pairs (both arbitrary strings). They are used to store metadata about the map objects (such as their type, their name and their physical properties). Tags are not free-standing, but are always attached to an object: to a node, a way or a relation", "link": "http://wiki.openstreetmap.org/wiki/Tags"}
+     ]
+      }
+
+     ]
+    },
+    {
+     "name": "Features", 
+     "description": "OpenStreetMap represents physical features on the ground (e.g., roads or buildings) using tags attached to its basic data structures (its nodes, ways, and relations).", "link": "http://wiki.openstreetmap.org/wiki/Map_Features",
+     "children": [
+      {"name": "Primary features", "description": "N/A", "link": "http://wiki.openstreetmap.org/wiki/Map_Features#Primary_features",
+        "children": [
+      {"name": "Aerialway", "description": "This is used to tag different forms of transportation for people or goods by using aerial wires. For example these may include cable-cars, chair-lifts and drag-lifts.", "link": "http://wiki.openstreetmap.org/wiki/Aerialway"},
+      {"name": "Aeroway", "description": "These are mainly related to aerodromes, airfields other ground facilities that support the operation of airplanes and helicopters.", "link": "http://wiki.openstreetmap.org/wiki/Aeroways"},
+      {"name": "Amenity", "description": "Used to map facilities used by visitors and residents. For example: toilets, telephones, banks, pharmacies, cafes, parking and schools.", "link": "http://wiki.openstreetmap.org/wiki/Amenities"},
+      {"name": "Barrier", "description": "These are used to describe barriers and obstacles that are usually involved by traveling.", "link": "http://wiki.openstreetmap.org/wiki/Barriers"},
+      {"name": "Boundary", "description": "These are used to describe administrative and other boundaries.", "link": "http://wiki.openstreetmap.org/wiki/Boundaries"},
+      {"name": "Building", "description": "This is used to identify individual buildings or groups of connected buildings.", "link": "http://wiki.openstreetmap.org/wiki/Buildings"},
+      {"name": "Craft", "description": "This is used as a place that produces or processes customised goods.", "link": "http://wiki.openstreetmap.org/wiki/Crafts"},
+      {"name": "Emergency", "description": "This is used to describe the location of emergency facilities and equipment.", "link": "http://wiki.openstreetmap.org/wiki/Emergency"},
+      {"name": "Geological", "description": "This is used to describe the geological makeup of an area.", "link": "http://wiki.openstreetmap.org/wiki/Geological"},
+      {"name": "Highway", "description": "This is used to describe roads and footpaths.", "link": "http://wiki.openstreetmap.org/wiki/Highways"},
+      {"name": "Historic", "description": "This is used to describe various historic places. For example: archeological sites, wrecks, ruins, castles and ancient buildings.", "link": "http://wiki.openstreetmap.org/wiki/Historic"},
+      {"name": "Landuse", "description": "This is used to describe the purpose for which an area of land is being used.", "link": "http://wiki.openstreetmap.org/wiki/Landuse"},
+      {"name": "Leisure", "description": "This is used to tag leisure and sports facilities.", "link": "http://wiki.openstreetmap.org/wiki/Leisure"},
+      {"name": "Man Made", "description": "A tag for identifying man made (artificial) structures that are added to the landscape.", "link": "http://wiki.openstreetmap.org/wiki/Man-made"},
+      {"name": "Military", "description": "his is used for facilities and on land used by the military. These may include the Navy, Army, Air Force and Marines.", "link": "http://wiki.openstreetmap.org/wiki/Military"},
+      {"name": "Natural", "description": "This is used to describe natural and physical land features. These also include features that have been modified by humans.", "link": "http://wiki.openstreetmap.org/wiki/Natural"},
+      {"name": "Office", "description": "An office is a place of business where administrative or professional work is carried out.", "link": "http://wiki.openstreetmap.org/wiki/Office"},
+      {"name": "Places", "description": "This is used mainly to give details about settlements.", "link": "http://wiki.openstreetmap.org/wiki/Places"},
+      {"name": "Power", "description": "These are used to map electrical power generation and distributions systems.", "link": "http://wiki.openstreetmap.org/wiki/Power"},
+      {"name": "Public Transport", "description": "This is used for features related to public transport. For example: railway stations, bus stops and services.", "link": "http://wiki.openstreetmap.org/wiki/Public_transport"},
+      {"name": "Railway", "description": "This tag includes all kinds of railways ranging from heavily used mainline railways to an abandoned rail line.", "link": "http://wiki.openstreetmap.org/wiki/Railways"},
+      {"name": "Route", "description": "This is used to describe routes of all different kinds.", "link": "http://wiki.openstreetmap.org/wiki/Relation:route"},
+      {"name": "Shop", "description": "The shop tag is used as a place of business that has stocked goods for sale.", "link": "http://wiki.openstreetmap.org/wiki/Shop"},
+      {"name": "Sport", "description": "This is used to provide information about which sports are placed on a facility such as a pitch or stadium. It is intended to be used in conjunction with tags landuse=* or leisure=*.", "link": "http://wiki.openstreetmap.org/wiki/Sport"},
+      {"name": "Tourism", "description": "This is used to map places and things of specific interest to tourists. For example these may be places to see, places to stay and things and places providing support.", "link": "http://wiki.openstreetmap.org/wiki/Tourism"},
+      {"name": "Waterway", "description": "This is used to described different types of waterways. When mapping the way of a river, stream, drain, canal, etc. these need to be aligned in the direction of the water flow.", "link": "http://wiki.openstreetmap.org/wiki/Waterways"}
+     ]
+      },
+      {"name": "Additional properties",
+        "description": "This is used to provide postal information for a building or facility. ", "link": "http://wiki.openstreetmap.org/wiki/Map_Features#Additional_properties",
+        "children": [
+      {"name": "Addresses", "description": "This is used to provide postal information for a building or facility.", "link": "http://wiki.openstreetmap.org/wiki/Map_Features#Addresses"},
+      {"name": "Annotation", "description": "Providing further information about tag values for other mappers and in some cases also for users.", "link": "http://wiki.openstreetmap.org/wiki/Annotations"},
+      {"name": "Name", "description": "The name tag is the primary tag used for naming a Element.", "link": "http://wiki.openstreetmap.org/wiki/Names"},
+      {"name": "Properties", "description": "This is used to give additional information of a general nature about another element.", "link": "This is used to add reference information for an element."},
+      {"name": "References", "description": "This is used to add reference information for an element. ", "link": "http://wiki.openstreetmap.org/wiki/Map_Features#References"},
+      {"name": "Restrictions", "description": "This is used to define restrictions that apply to the associated element.", "link": "http://wiki.openstreetmap.org/wiki/Restrictions"}
+     ]
+    }
+     ]
+    },
+    {
+     "name": "Layers",
+     "description": "You can switch between different layers offering different views of the same mapping data.", "link":"http://wiki.openstreetmap.org/wiki/Browsing#Layers",
+     "children": [
+      {"name": "Standard", "description": "Default layer", "link": "http://wiki.openstreetmap.org/wiki/Standard_tile_layer"},
+      {"name": "Cycle Map", "description": "OpenStreetMap rendering layer like mapnik, but primarily aimed at showing information useful to cyclists.", "link": "http://wiki.openstreetmap.org/wiki/OpenCycleMap"},
+      {"name": "Transport Map", "description": "You can switch between different layers offering different views of the same mapping data.", "link": "http://wiki.openstreetmap.org/wiki/Transport_Map"},
+      {"name": "MapQuest", "description": "description ", "link": "http://wiki.openstreetmap.org/wiki/MapQuest"},
+      {"name": "Map Data layer", "description": "This gives you a view of the underlying data, allowing you to select the elements and view their tag data, and editing history.", "link": "http://wiki.openstreetmap.org/wiki/Map_Data_layer"}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "The Foundation", "description": "The OpenStreetMap Foundation is a UK registered not-for-profit company which supports the OpenStreetMap project.", "link": "http://www.osmfoundation.org/",
+   "children": [
+   {
+     "name": "Working Groups", "description":"Working Groups are the main way in which the Foundation supports OSM in specific areas. Some are more active than others. Working Groups may include a member of the board, but should also nominate a member to take part in Management Team meetings. ", "link":"http://wiki.osmfoundation.org/wiki/Working_Groups",
+     "children": [
+      {"name": "Communication Working Group", 
+      "description": "The Communication Working Group has begun with an initial focus on communication between the OSMF (Board and Working Groups), its members, and the public. The Communication Working Group will create guidelines and frameworks to facilitate appropriate communication between entities like the Board and other working groups, ensuring their activities and achievements are communicated effectively to the rest of the community and wider public.",
+      "link": "http://wiki.osmfoundation.org/wiki/Communication_Working_Group"},
+      {"name": "Data Working Group", "description": 
+            "<p>Tasks:</p><p>Resolution of issues in copyright violation, disputes, vandalism, and bots, beyond the normal means of the community</p><p>Helping to set policy on data</p> <p>Detecting and stopping vandalism and imports that do not comply with guidelines.</p>",
+             "link": "http://wiki.osmfoundation.org/wiki/Data_Working_Group"},
+      {"name": "Licencing Working Group", "description": 
+          "<p>Tasks:</p><p>Handle issues relating the the current license for OSM data</p></p>Migrating to a new license</p>",
+           "link": "http://wiki.osmfoundation.org/wiki/Licensing_Working_Group"},
+      {"name": "Local Chapters Working Group", "description": 
+          "<p>Tasks:</p><p>Responsible for running the process of setting up federated OSM-Foundation local groups</p>",
+          "link": "http://wiki.osmfoundation.org/wiki/Local_Chapters_Working_Group"},
+      {"name": "Operations Working Group", "description":  
+          "<p>Tasks:</p><p>Planning and maintenance of the OSM API and servers</p>",
+           "link": "http://wiki.osmfoundation.org/wiki/Operations_Working_Group"},
+      {"name": "Engineering Working Group", "description":  
+          "<p>Tasks:</p><p>Engaging and assisting developers to develop OSM software.</p>", 
+          "link": "http://wiki.osmfoundation.org/wiki/Engineering_Working_Group"},
+      {"name": "StateoftheMap Organizing Committee", "description":  
+          "<p>Tasks:</p><p>Organization and execution of the annual OpenStreetMap Foundation Conference 'The State of the Map'</p>",
+           "link": "http://wiki.osmfoundation.org/wiki/StateoftheMap_Organizing_Committee"},
+      {"name": "Strategic Working Group", "description":  
+          "<p>Tasks:</p><p>Long term planning, strategy and fund-raising</p>",
+           "link": "http://wiki.osmfoundation.org/wiki/Strategic_Working_Group"}
+     ]
+    },
+    {"name": "Board Meeting Minutes", "description": "Formal meetings normally held monthly", "link": "http://www.osmfoundation.org/wiki/Board_Meeting_Minutes"},
+    {"name": "Articles of Association", "description": "N/A", "link": "http://www.osmfoundation.org/wiki/Articles_of_Association"},
+    {
+     "name": "Membership",
+     "description": "Anyone can join the Foundation through the foundation website for £15.", 
+     "link": "http://www.osmfoundation.org/wiki/Join"     
+    }
+   ]
+  },
+  {
+   "name": "The Community",
+   "description": "How to reach out and become part of the community that is at the heart of OSM (mailing lists, IRC channels, forums, projects)",
+   "children": [
+    {
+     "name": "Mailing lists",
+     "children": [
+      {"name": "Topics Lists", "description": "Focus specific mailing lists (i.e.: accessibility, design, newbie, etc)", "link": "http://wiki.openstreetmap.org/wiki/Mailing_lists#Topic_Lists"},
+      {"name": "Country-Specific Lists", "description": "Many countries have their own mailing lists. You can find a list on the wiki page.", "link": "http://wiki.openstreetmap.org/wiki/Mailing_lists#Country-Specific_Lists"},
+      {"name": "Requests for new lists", "description": "If you want a new list for your country or language, send an email to Michael Collinson, michael at osmfoundation dot org", "link": "http://wiki.openstreetmap.org/wiki/Mailing_lists#Requests_for_new_lists"}
+     ]
+    },
+    {
+     "name": "Forum",
+     "description": "The OpenStreetMap project hosts a forum (conventional forum/message-board system) as an alternative contact / communication channel for those who prefer it over the mailing lists.", "link": "http://forum.openstreetmap.org/"
+    },
+    {
+     "name": "IRC Channels",
+     "description": "It's one of several contact channels used by the OpenStreetMap community. Real-time chat can be a great way to ask a quick question about mapping or some more technical matter, or just to get to know some fellow OpenStreetMap enthusiasts.", "link": "http://wiki.openstreetmap.org/wiki/IRC"
+    },
+    {
+      "name": "Projects",
+      "description": "This is by no means an exhaustive list of all existing OSM projects but if you want to start mapping this can be a good starting point.",
+    "children": [
+      {"name": "OpenSeaMap", "description": "The free nautical chart", "link": "http://openseamap.org"},
+      {"name": "Humanitarian", 
+        "children": [
+        {"name": "Humanitarian OSM Team (HOT)", "description": "The Humanitarian OpenStreetMap Team (HOT) applies the principles of open source and open data sharing to humanitarian response and economic development.", "link": "http://wiki.openstreetmap.org/wiki/Humanitarian_OSM_Team"},
+        {"name": "Missing Maps", "description": "The Missing Maps Project is a humanitarian mapping project. A collaboration between HOT and various partner agencies.<br> Its aim is to map the most vulnerable places in the developing world, in order that international and local NGOs, and individuals can use the maps and data to better respond to crises affecting the areas.", "link": "http://wiki.openstreetmap.org/wiki/Missing_Maps_Project"}
+        ]
+      }     
+    ]
+    }
+   ]
+  },
+  {
+   "name": "The Data",
+    "description": "Data is one of the mail building block of OSM as all that constitute OSM is stored in a database.",
+   "children": [
+    {
+     "name": "Formats",
+     "description":"N/A",
+     "link":"http://wiki.openstreetmap.org/wiki/OSM_file_formats",
+     "children": [
+      {"name": "OSM XML", "description": "xml-format provided by the API", "link": "http://wiki.openstreetmap.org/wiki/OSM_XML"},
+      {"name": " PBF Format", "description": "highly compressed, optimized binary format similar to the API", "link": "http://wiki.openstreetmap.org/wiki/PBF_Format"},
+      {"name": "o5m", "description": "for high-speed processing, uses PBF coding, has same structure as XML format", "link": "http://wiki.openstreetmap.org/wiki/O5m"},
+      {"name": "OSM JSON", "description": "json variant of OSM XML", "link": "http://wiki.openstreetmap.org/wiki/OSM_JSON"},
+      {"name": "Level0L", "description": "more human readable OSM XML without <> and lowered redundancy", "link": "http://wiki.openstreetmap.org/wiki/Level0L_(format)"}
+     ]
+    },
+    {
+     "name": "Databases",
+     "description":"There are several different databases systems used by OSM users",
+     "link":"http://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#Choice_of_DBMS",
+     "children": [
+      {"name": "PostgreSQL", "description": "An Open Source relational database. Since API v0.6 it is used for the main central OSM database running on Servers/smaug", "link": "http://wiki.openstreetmap.org/wiki/PostgreSQL"},
+      {"name": " MySQL", "description": "A type of database. It's massively popular, and is still by far the most widely used free and open source database, but it's all gone a bit corporate lately. Postgres is preferred by many nowadays for political but also technical reasons. OpenStreetMap swapped from using MySQL to Postgres for its main Database a few years ago. For a while The Rails Port code could still work with MySQL, but this is no longer the case (at least not without a lot of hacking) ", "link": "http://wiki.openstreetmap.org/wiki/MySQL"},
+      {"name": "SQLite", "description": "Is a local Database Management System that has a Geo Extension called SpatiaLite, too. Cause it has no complex DBMS and structures, it will fail on bigger data extracs.", "link": "http://wiki.openstreetmap.org/wiki/SQLite"},
+      {"name": "CouchDB", "description": "OSMCouch is storing Planet.osm data in CouchDB with GeoCouch extension. GeoJSON data can be retrieved for any use case or viewed with OpenLayers, extended with POI tools software.", "link": "http://wiki.openstreetmap.org/wiki/OSMCouch"},
+      {"name": "MongoDB", "description": "a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster", "link": "https://www.mongodb.org/"}
+     ]
+    },
+    {
+     "name": "Databases schemas",
+     "description":"OSM uses different database schemas for different applications.",
+     "link":"http://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#Database_Schemas",
+     "children": [
+      {"name": "osm2pgsql", "description": "Osm2pgsql schema has historically been the standard way to import OSM data for use in rendering software such as Mapnik. It also has uses in analysis, although the schema does not support versioning or history directly. The import is handled by the Osm2pgsql software, which has two modes of operation, slim and non-slim, which control the amount of memory used by the software during import and whether it can be updated. Slim mode supports updates, but time taken to import is highly dependent on disk speed and may take several days for the full planet, even on a fast machine. Non-slim mode is faster, but does not support updates and requires a vast amount of memory.", "link": "http://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#Osm2pgsql"},
+      {"name": "apidb", "description": "ApiDB is a schema designed to replicate the storage of OSM data in the same manner as the main API schema and can be produced using the Osmosis commands for writing ApiDBs or updating ApiDBs with changes. This schema does not have any native geometry, although in the nodes, ways and relations tables there is enough data to reconstruct the geometries.", "link": "http://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#apidb"},
+      {"name": "pgsnapshot", "description": "Is a local Database Management System that has a Geo Extension called SpatiaLite, too. Cause it has no complex DBMS and structures, it will fail on bigger data extracs.", "link": "http://wiki.openstreetmap.org/wiki/SQLite"},
+      {"name": "imposm", "description": "OSMCouch is storing Planet.osm data in CouchDB with GeoCouch extension. GeoJSON data can be retrieved for any use case or viewed with OpenLayers, extended with POI tools software.", "link": "http://wiki.openstreetmap.org/wiki/OSMCouch"},
+      {"name": "nominatim", "description": "Nominatim is a geocoder where the database is produced by a special back-end of Osm2pgsql. It is a special-purpose database, and may not be suitable for other problem domains such as rendering or routing.", "link": "http://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#nominatim"},
+      {"name": "ogr2ogr", "description": "The OGR library can read OSM data (XML and PBF) and can write into various other formats, including PostgreSQL/PostGIS, SQLite/Spatialite, and MS SQL databases (though I've tried only PostGIS). The ogr2ogr utility can do the conversion without any programming necessary with a schema configuration that's reminiscent of osm2pgsql. One interesting feature is that it resolves relations into geometries: OSM multipolygons and boundaries become OGC MultiPolygon, OSM multilinestrings and routes become OGC MultiLineString, and other OSM relations become OGC GeometryCollection.", "link": "http://wiki.openstreetmap.org/wiki/OGR"},
+      {"name": "osmsharp", "description": "A toolbox of OSM-related routines, including some to import OSM data into Oracle databases.", "link": "http://wiki.openstreetmap.org/wiki/OsmSharp"},
+      {"name": "overpass", "description": "The Overpass_API is a query language built on top of a custom back-end database with software called OSM3S (see OSM3S/install for install and setup instructions). This is a custom database and it is therefore hard to compare it with other database schemas. You could recreate the complete planet file from the database. It is geared to have good performance on locally concentrated datasets.", "link": "http://wiki.openstreetmap.org/wiki/Overpass_API"},
+      {"name": "mongosm", "description": "A set of Python scripts for importing, querying and (maybe) keeping up-to-date OSM data in a MongoDB database.", "link": "https://github.com/iandees/mongosm"},
+      {"name": "node-mongosm", "description": "Inspired by mongOSM, Node-MongOSM uses Mongoose to provide schemas and insert vs upsert options via a command line interface.", "link": "http://sammerry.github.io/node-mongosm/"},
+      {"name": "goosm", "description": "Goosm is an application written in go for importing OSM XML files into MongoDB. It imports in two passes, first for the nodes, and second the ways. Nodes are imported as Geo-JSON points, and ways are imported as Geo-JSON lines. Both of the collections created are indexed with geo-spatial indicies enabling fast searching.", "link": "https://github.com/bocajim/goosm"}
+     ]
+    },
+    {
+     "name": "Downloading",
+     "description":"It is possible to download map data from the OpenStreetMap dataset in a number of ways.",
+     "link":"http://wiki.openstreetmap.org/wiki/Downloading_data#Download_the_data",
+     "children": [
+      {"name": "Planet OSM", "description": "All data at once", "link": "https://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#Planet.osm"},
+      {"name": "XAPI", "description": "Huge amounts of data", "link": "https://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#XAPI"},
+      {"name": "Overpass API", "description": "Huge amounts of data", "link": "https://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#Overpass_API"},
+      {"name": "API", "description": "Small amounts of data", "link": "https://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#API"}
+     ]
+    },
+    {
+     "name": "Import",
+     "description":"Importing (also known as Bulk Importing) is the process of uploading external data to OSM. Scripted imports and automated edits should only be carried out by those with experience and understanding of the way the OpenStreetMap community creates maps, and only with careful planning and consultation with the local community.",
+     "link":"http://wiki.openstreetmap.org/wiki/Import",
+     "children": [
+      {"name": "Import Guidelines ", "description": "The import guidelines, along with the Automated Edits code of conduct, should be followed when importing data into the OpenStreetMap database as they embody many lessons learned throughout the history of OpenStreetMap. Imports should be planned and executed with more care and sensitivity than other edits, because poor imports can have significant impacts on both existing data and local mapping community.", "link": "http://wiki.openstreetmap.org/wiki/Import/Guidelines"},
+      {"name": "Import Catalogue ", "description": "A list of imported data. Document imports here to facilitate sharing of expertise and trouble shooting.", "link": "http://wiki.openstreetmap.org/wiki/Import/Catalogue"},
+      {"name": "Software", "description": "Description of software and import processes. Depending on the format of your source data, you'll need some software to convert it into the OSM format. ", "link": "http://wiki.openstreetmap.org/wiki/Import/Software",
+        "children": [
+      {"name": "via JOSM", "description": "One of the earliest and most common forms of bulk import is via JOSM. Some program takes the import data and converts it to JOSM file format. A user can then open JOSM, load the file and hit the upload button. This method is fairly reliable and allows for the user to view and manipulate the data prior to upload. The disadvantage is that JOSM has to be able to load data, which becomes impractical once the data reaches several megabytes. Also there have been reports that when uploading lots of data, the process usually gets stuck after a few thousand objects, making it not very useful for large scale uploads. This cannot be run on the server because JOSM is an interactive program.", "link": "http://wiki.openstreetmap.org/wiki/Import/Software#via_JOSM"},
+      {"name": "via direct API manipulation", "description": "This method is rather uncommon in general, however it is used by Almien coastlines. There the shapefile is processed record by record and it immediatly creates the objects. The main downside of this method is that no record is generally made of what has been uploaded and created and since it is done on the fly, any interruption generally does not know how far it got. The actual changeset is ambiguous since it is also generated on the fly. In general this method should be discouraged. ", "link": "http://wiki.openstreetmap.org/wiki/Import/Software#via_direct_API_manipulation"},
+      {"name": "via Osmosis", "description": "Osmosis is a program which does general manipulation of OSM data. Amongst its many other features it allows the application of a 'change file' to a database. It understands osmChange file format. However, it can only apply directly to a database", "link": "http://wiki.openstreetmap.org/wiki/Import/Software#via_Osmosis"},
+      {"name": "via bulk_upload.py", "description": "Tool written in Python which is intended to replace bulk_upload.pl and support the API v0.6 (which bulk_upload.pl does not). Like bulk_upload.pl, it intelligently stores progress. It also divides changesets into parts so that the upload tasks are smaller. However, it does not appear to support the osmChange format and therefore cannot be used for edits.", "link": "http://wiki.openstreetmap.org/wiki/Import/Software#via_bulk_upload.py"},
+      {"name": "via upload.py", "description": "Another set of python scripts for uploading changes to OpenStreetMap, currently using API v0.6. The focus here is on recoverability from network errors and other problem situations so that it is almost always possible to resume a failed import without creating duplicates or other artifacts. Instead of doing the entire upload with one command these scripts are building blocks that work at a lower level. ", "link": "http://wiki.openstreetmap.org/wiki/Import/Software#via_upload.py"}
+     ]
+     },
+      {"name": "Handling bad imports ", "description": "What to do if you discovered a bad import.", "link": "http://wiki.openstreetmap.org/wiki/Handling_bad_imports"}
+     ]
+    },
+    {
+     "name": "Servers",
+     "description":"All you ever wanted to know about the engine running OSM",
+     "link":"http://wiki.openstreetmap.org/wiki/Servers"
+    }
+   ]
+  },
+  {
+     "name": "License",
+     "description": "<p>OpenStreetMap is open data. It is free and available for personal, group and commercial use. It is licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).</p><p>You are free to copy, distribute, transmit and adapt our data, as long as you credit OpenStreetMap and its contributors. If you alter or build upon our data, you may distribute the result only under the same licence.</p>",
+     "link":"https://www.openstreetmap.org/copyright/en",
+     "children": [
+      {"name": "Data", "description": "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL)", "link": "http://wiki.openstreetmap.org/wiki/Open_Database_License"},
+      {"name": "Cartography", "description": "The cartography in our map tiles, and our documentation, are licensed under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA).", "link": "https://www.openstreetmap.org/copyright/en"},
+      {"name": "Software", "description": "The core Rails port that powers the main osm.org site is licensed under the GPL v2. Individual projects have their own licenses.", "link": "http://wiki.openstreetmap.org/wiki/Legal_FAQ#1b._What_is_the_license_for_the_software.3F"},
+      {"name": "Guidelines", "description": "This is a method for better defining certain legal terms in the specific and practical context of using OpenStreetMap data under the Open Database License, ODbL, and how we would like to intepret them within the OpenStreetMap project community.", "link": "http://wiki.openstreetmap.org/wiki/Open_Data_License/Community_Guidelines"},
+      {"name": "Credit", "description": "We require that you use the credit:<br><i>© OpenStreetMap contributors</i>.<br><br> You must also make it clear that the data is available under the Open Database License, and if using our map tiles, that the cartography is licensed as CC BY-SA. You may do this by linking to the copyright page.", "link": "https://www.openstreetmap.org/copyright/en"}     
+      ]
+  },
+  {
+   "name": "Learning resources",
+    "description": "If you want to learn how to contribute, you'll find guides, tutorials, webinars, videos here.",
+    "children": [
+      {"name": "Beginners' guide", "description": "Will show you how to add data to OpenStreetMap", "link": "https://wiki.openstreetmap.org/wiki/Beginners%27_guide"},
+      {"name": "Learn OSM", "description": "Online manual created by the Humanitarian OpenStreetMap Team. It was originally aimed at HOT's work in Indonesia. The content is being expanded to help provide information in for projects in other areas.", "link": "http://learnosm.org"},
+      {"name": "Learning Guides", "description": "Guides in Google Docs format. Beginners/Intermediate/Advanced. Include a QGIS guide", "link": "https://github.com/hotosm/learnosm/wiki/English-Learning-Guides"},
+      {"name": "Map Give", "description": "This site provides step-by-step instructions to help volunteers like you learn to map and get involved in humanitarian initiatives.", "link": "http://mapgive.state.gov/learn-to-map/"},
+      {"name": "Map Time", "description": "Listed here is a collection of tutorials and slides presented by various Maptime chapters as well as external resources for learning.", "link": "http://maptime.io/lessons-resources/"}
+      ]
+    },
+  {
+   "name": "Software",
+    "description": "All aspects of using OSM with editing, rendering, monitoring, fixing and routing softwares",
+   "children": [
+    {
+     "name": "Editors",
+     "description":"Editing OpenStreetMap is the process of making changes to the map data - such as adding roads, pubs or changing names of features. Several editors can be used to edit features in the OpenStreetMap database. Before you can edit any data you will need to create an OSM account.",
+     "link":"https://wiki.openstreetmap.org/wiki/Editing",
+     "children": [
+      {"name": "iD", "description": "Editor programmed in JavaScript (usable directly in the browser) with the aims to be simple and friendly.", "link": "https://wiki.openstreetmap.org/wiki/ID"},
+      {"name": "JOSM", "description": "A feature-rich (desktop application) editor with an interface which can seem complex at first. It is popular among experienced editors thanks to its plugins and stability.", "link": "https://wiki.openstreetmap.org/wiki/JOSM"},
+      {"name": "Others", "description": "Because OpenStreetMap is an open platform with an editing API, there are many other editors to choose from, some with a simplified sub-set of functionality, some operating on specific platforms such as mobile devices.", "link": "https://wiki.openstreetmap.org/wiki/Editing#Choice_of_editors"}
+     ]
+    },
+    {
+     "name": "Routing",
+     "children": [
+      {"name": "OSM based routing services", "description": "Routing (in some countries called navigation) services help people get from one place to another. OpenStreetMap data includes information for routing by many modes including car, foot, bicycle and horse. There are many offline, embedded and web-based routing services using OpenStreetMap data.", "link": "https://wiki.openstreetmap.org/wiki/Routing"},
+      {"name": "Offline routers", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/Routing/OfflineRouters"},
+      {"name": "Online routers", "description": "Online routing services and software using OpenStreetMap data", "link": "https://wiki.openstreetmap.org/wiki/Routing/online_routers"}
+     ]
+    },
+    {
+     "name": "Rendering",
+     "children": [
+      {"name": "Popular", "description": "The main options for conventional 2D raster rendering: Mapnik and Osmarender", "link": "https://wiki.openstreetmap.org/wiki/Rendering#Popular"},
+      {"name": "Applications", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/Rendering#Applications"},
+      {"name": "Libraries", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/Rendering#Libraries"},
+      {"name": "3D rendering", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/Rendering#3D_Rendering_.28see_also_3D_Development.29"}
+     ]
+    },
+    {
+     "name": "Mobile",
+     "description":"There are a massive range of mobile software for displaying OpenStreetMap or otherwise making use of our geodata on phones and other mobile devices. Increasingly apps are allowing contribution to OpenStreetMap too. Because OpenStreetMap data is free and open for anyone and everyone, mobile software is being developed by a wide range of people and companies, and OpenStreetMap data can be accessed on almost any mobile platform.",
+     "link":"https://wiki.openstreetmap.org/wiki/Software/Mobile",
+     "children": [
+      {"name": "Android", "description": "List of android software supporting OpenStreetMap", "link": "https://wiki.openstreetmap.org/wiki/Android"},
+      {"name": "iOS", "description": "List of iOS software supporting OpenStreetMap", "link": "https://wiki.openstreetmap.org/wiki/Apple_iOS"},
+      {"name": "Windows Phone", "description": "List of Windows phone software supporting OpenStreetMap", "link": "https://wiki.openstreetmap.org/wiki/Windows_Phone"},
+      {"name": "BlackBerry", "description": "List of BlackBerry software supporting OpenStreetMap", "link": "https://wiki.openstreetmap.org/wiki/BlackBerry_OS"}
+    ]
+    },
+    {
+     "name": "Quality Assurance",
+     "description":"Quality Assurance tools help lead to better quality of OSM data. Often, the tools achieve this by providing a list of bugs in the data, which mappers can then go and fix using editing tools. The bugs are either automatically detected based on rules and data analysis, or the tools provide a means of manually reporting them, or some combination of the two. There are many different ideas for how to do this, and what kind of bugs to focus on, hence many different tools",
+     "link":"https://wiki.openstreetmap.org/wiki/Quality_assurance",
+     "children": [
+      {"name": "Bug reporting tools", "description": "These are tools that try to highlight and point out parts of the data that are likely wrong. There are also reports from manual quality checks by humans. In both cases, the reported issues may contain false positives and, when editing, care should be taken to ensure their accuracy. However, they can provide a very valuable visualisation of which areas need attention and can help spot and correct errors", "link": "https://wiki.openstreetmap.org/wiki/Quality_assurance#Bug_reporting_tools"},
+      {"name": "Error detection tools", "description": "Error Detecting Tools check the OSM data for potential data errors, inaccuracy or sparsely mapped places. Users should check if these structures are really wrong (false positives usually occur and there are not really mapping rules which are set in stone) and correct the data for a continuously rising data quality", "link": "https://wiki.openstreetmap.org/wiki/Quality_assurance#Error_detection_tools"},
+      {"name": "Visualization tools", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/Quality_assurance#Visualization_tools"},
+      {"name": "Monitoring Tools", "description": "There are a number of tools that allow you to spot erroneous changes and edits. For example if you are very familiar with an area and have thoroughly mapped it, you might want to follow all changes and verify that no unintended damage or vandalism has happened in the area. The Planet History includes all changes that have been made, but might not be as easy to use", "link": "https://wiki.openstreetmap.org/wiki/Quality_assurance#Monitoring_Tools"},
+      {"name": "Assistant tools", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/Quality_assurance#Assistant_tools"},
+      {"name": "Tag statistics", "description": "To compare the use of a tag or to see typos, use these statistical tools", "link": "https://wiki.openstreetmap.org/wiki/Quality_assurance#Tag_statistics"},
+      {"name": "Other", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/Quality_assurance#Other"}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "OSM-based services",
+   "description": "A list of projects using especially data from OpenStreetMap.", "link":"https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services",
+   "children": [
+      {"name": "General", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#General"},
+      {"name": "Art", "description": "Some artistic maps using OSM data", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Art"},
+      {"name": "Biking, Geocaching, Hiking, Sport", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Biking.2C_Geocaching.2C_Hiking.2C_Sport"},
+      {"name": "History, Archaeology, Monument", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#History.2C_Archaeology.2C_Monument"},
+      {"name": "3D", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#3D"},
+      {"name": "Routing", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Routing"},
+      {"name": "Services", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Services"},
+      {"name": "Export", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Export"},
+      {"name": "Interaction", "description": "Explore OSM data with more than just a slippy map and markers", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Interaction"},
+      {"name": "Compare", "description": "Compare OSM maps with other commercial alternatives", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Compare"},
+      {"name": "Edit", "description": "Edit OSM data in a webbrowser. Mostly focused at a specific topic", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Edit"},
+      {"name": "Accessibility for persons with disabilities", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Accessibility_for_persons_with_disabilities"},
+      {"name": "Public Transport", "description": "To see the OSM data on Public Transport ", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Public_Transport"},
+      {"name": "Live/real-time edits to OSM data", "description": "N/A", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Live.2Freal-time_edits_to_OSM_data"},
+      {"name": "Quality Assurance - OSM Tool", "description": "List of web utilities to work with OSM on monitoring, debugging, etc. ", "link": "https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services#Quality_Assurance_-_OSM_Tool"}
+     ]
+    },
+    {
+   "name": "Glossary",
+   "description": "A list of technical and colloquial terms used in and around the OpenStreetMap project. Note: It's fairly arbitrary what has been included on this page. This list is certainly not complete. There are very many jargon words, and names of software in and around OpenStreetMap.", "link":"https://wiki.openstreetmap.org/wiki/Glossary"}
+ ]
+}
+

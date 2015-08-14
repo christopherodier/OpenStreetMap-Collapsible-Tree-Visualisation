@@ -17,6 +17,7 @@ background-color: #E1EBF5;
   fill: #FFF;
 }
 
+
 .node:hover text {
   font: 12px verdana;
   fill: #E27A3F;
@@ -76,10 +77,14 @@ background-color: #E1EBF5;
   height: 370px;
   border: 1px solid black;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 23px;
   font-family: verdana;
   padding: 5px;
   margin-top: 5px;
+}
+
+#infobutton a {
+  color: white;
 }
 
 /* Style for the fullscreen/hiding for #overlay*/
@@ -133,10 +138,6 @@ background-color: #E1EBF5;
   font-style: italic;
   color: white; 
   text-align: center; 
-}
-
-#infobutton a {
-  color: white;
 }
 
 #infobutton p {
